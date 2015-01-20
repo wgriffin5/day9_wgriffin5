@@ -1,0 +1,8 @@
+<%= @blog.title %>
+<%= @blog.content %>
+<%= @blog.comment %>
+<a href="/">Back</a>
+<form action="/delete_horse/<%= @blog.title %>" method="post">
+		<input type="hidden" name="_method" value+"delete">
+		<input type="submit" value="Delete">
+</form>
